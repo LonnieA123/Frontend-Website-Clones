@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Complete this form</title>
+  <style>
+
+    body {
+      margin: 0px;
+      padding: 0px;
+      background: #e5e5e5;
+    }
+
+    #pagewrapper {
+      width: 100%;
+    }
+
+    #page {
+      width: 900px;
+      margin: 0 auto;
+      padding-top:50px;
+    }
+
+    #main_table {
+      width: 900px;
+      background-color: #FFFFFF;
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -webkit-box-shadow: 0 1px 10px rgba(0,0,0,.1);
+      -moz-box-shadow: 0 1px 10px rgba(0,0,0,.1);
+      box-shadow: 0 1px 10px rgba(0,0,0,.1);
+      padding: 10px 10px 10px 10px;
+    }
+
+    #lead_form {
+      width: 300px;
+      height: 300px;
+      background-color: #e5e5e5;
+      border: 10px solid #FFFFFF;
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -webkit-box-shadow: 0 1px 10px rgba(0,0,0,.1);
+      -moz-box-shadow: 0 1px 10px rgba(0,0,0,.1);
+      box-shadow: 0 1px 10px rgba(0,0,0,.1);
+      margin-left: 40px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+    .lead_form_name {
+      font-size: 14px;
+      letter-spacing: -1px;
+      text-align: left;
+      font-family: Verdana, Arial, sans-serif;
+      padding:0px 8px;
+    }
+
+
+
+    #agency_name  {
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: -3px;
+      text-align: left;
+      padding: 20px 0px 3px 20px;
+      font-family: Verdana, Arial, sans-serif;}
+
+    #footer {
+      font-size: 10px;
+      letter-spacing: -1px;
+      text-align: right;
+      font-family: Verdana, Arial, sans-serif;
+      color:#000000;
+      width:900px;
+      margin: 0 auto
+    }
+
+    #calltoaction  {
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: -1px;
+      text-align: left;
+      padding: 20px 0px 5px 20px;
+      font-family: Verdana, Arial, sans-serif;
+      text-shadow:2px 2px 2px #FFFFFF;
+      margin-bottom: 20px;
+    }
+
+    .image{
+      border: black;
+      background-color: black;
+      width: 450px;
+      height: 450px;
+      margin-right: 40px;
+      display: flex;
+      margin-bottom: 10px;
+
+    }
+
+    .form_wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .lead_form_fields {
+      height:20px;
+      padding:3px 8px;
+      margin-bottom:5px;
+      font-size:130%;
+    }
+
+    .single-input{
+      width: 90%;
+      height: 20px;
+      margin: 5px;
+    }
+
+
+
+    .inputs{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .input-submit{
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+
+    .submit{
+      width: 90%;
+      height: 25px;
+      margin: 5px;
+    }
+
+  </style>
+</head>
+
+<body>
+<div id="pagewrapper">
+  <div id="page">
+    <div id="agency_name">>Agency Name Here< </div>
+    <div id="main_table">
+
+      <div id="main_table_image">
+        <div id="calltoaction">Call 1-888-555-5555 or Complete the Form below<br />
+          for an Agent to Contact You Today! <br>
+        </div>
+
+
+
+        <div class="form_wrapper">
+          <form method="post" action="https://begumainaccount.radiusbob.com/leads/import" id="lead_form">
+
+            <div class="inputs">
+
+              <label for="NAME" class="lead_form_name">Name:</label>
+              <input type="text" name="NAME" id="NAME" class="single-input" placeholder="Name">
+
+              <label for="EMAIL" class="lead_form_name">Email:</label>
+              <input type="text" name="EMAIL" id="EMAIL" class="single-input" placeholder="Email">
+
+              <label for="PHONE" class="lead_form_name">PHONE:</label>
+              <input type="text" name="PHONE" id="PHONE" class="single-input" placeholder="Phone Number">
+
+            </div>
+
+            <input type="hidden" name="TEMPERATURE" value="HOT">
+            <input type="hidden" name="SUCCESS_URL" value="http://www.YourDomain.com/SuccessfulSubmissionPage.html">
+            <input type="hidden" name="ERROR_URL" value="http://www.YourDomain.com/ErrorPage.html">
+
+            <div class="input-submit">
+              <input type="submit" class="submit" value="submit">
+            </div>
+
+          </form>
+
+          <div class="image"></div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <div id="footer">Copyright (c) 2018 Agency Name Here. All rights reserved.</div>
+  </div>
+</div>
+
+</body>
+</html>
